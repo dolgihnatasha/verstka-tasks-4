@@ -1,0 +1,82 @@
+body
+{
+    background-color: beige;
+    font-family: 'Noto Serif', serif;
+}
+
+header
+{
+    border: 3px double black;
+    text-align: center;
+}
+
+main
+{
+    -webkit-column-count: 2;
+    -webkit-column-rule: 2px dotted black;
+}
+
+h1
+{
+    font-family: 'Ruslan Display', 'Arial', fantasy;
+}
+
+h2
+{
+    text-transform: uppercase;
+    font-family: 'Kelly Slab', 'Arial', sans-serif;
+}
+
+p
+{
+    font-size: .7em;
+    text-indent: 10px;
+    font-family: 'Noto Serif', serif;
+}
+
+.mainArticle > h2
+{
+    font-size: 2em;
+}
+
+.smallArticle > h2
+{
+    font-size: 1.3em;
+}
+
+.mainArticle
+{
+    -webkit-column-break-before: always;
+}
+.mainArticle > div
+{
+    -webkit-column-count: 2;
+    text-align: justify;
+}
+
+.smallArticle > div
+{
+    -webkit-column-count: 3;
+    text-align: justify;
+}
+
+div::first-letter
+{
+    font-size: 1.5em;
+    font-family: 'Lobster', 'Ruslan Display', sans-serif;
+}
+
+div > figure
+{
+    width: 100%;
+    -webkit-column-break-inside: avoid;
+    text-align: center;
+    margin: 0;
+    font-size: 0.6em;
+    color: #959595;
+}
+figure > img
+{
+    width: 100%;
+}
+
